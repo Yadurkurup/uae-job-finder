@@ -3,109 +3,334 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UAE Workforce Hub</title>
+  <title>WorkNow UAE – Hire & Get Hired Fast</title>
+  <meta
+    name="description"
+    content="WorkNow UAE is a clean, simple platform that connects UAE employers with real workers for construction, restaurants, drivers, warehouse and more."
+  />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-slate-50 text-slate-800">
 
   <!-- HEADER -->
-  <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-600">UAE Workforce Hub</h1>
-      <nav class="space-x-6 hidden md:flex">
-        <a href="#features" class="hover:text-blue-600">Features</a>
-        <a href="#workers" class="hover:text-blue-600">For Workers</a>
-        <a href="#employers" class="hover:text-blue-600">For Employers</a>
+  <header class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <!-- Logo / Brand -->
+      <div class="flex items-center gap-2">
+        <div class="h-9 w-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg">
+          WN
+        </div>
+        <div>
+          <div class="font-bold text-lg sm:text-xl text-slate-900">WorkNow UAE</div>
+          <div class="text-xs text-slate-500 hidden sm:block">
+            Fast hiring for real workers
+          </div>
+        </div>
+      </div>
+
+      <!-- Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#how-it-works" class="hover:text-blue-600">How it works</a>
+        <a href="#categories" class="hover:text-blue-600">Job categories</a>
+        <a href="#workers" class="hover:text-blue-600">For workers</a>
+        <a href="#employers" class="hover:text-blue-600">For employers</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
-      <a href="#start" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Get Started</a>
+
+      <!-- CTA -->
+      <a
+        href="#start"
+        class="hidden sm:inline-flex bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700"
+      >
+        Get started
+      </a>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="max-w-6xl mx-auto px-6 py-20 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-      The Fastest Way to Hire & Get Hired in the UAE
-    </h2>
-    <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
-      A clean and simple platform connecting UAE companies with real workers —
-      plumbers, helpers, drivers, restaurant staff, construction workers & more.
-    </p>
+  <!-- HERO -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-12 pb-16" id="start">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+          The fastest way to hire & get hired in the UAE.
+        </h1>
+        <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-xl">
+          WorkNow UAE connects companies with real workers for construction, restaurants, warehouses,
+          drivers, cleaning, and more – in one clean, simple platform.
+        </p>
 
-    <div class="flex flex-col md:flex-row justify-center gap-4 mt-6">
-      <a href="#workers" class="bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700">
-        I’m Looking for a Job
-      </a>
-      <a href="#employers" class="bg-gray-800 text-white px-6 py-3 rounded-lg text-lg hover:bg-gray-900">
-        I Want to Hire Workers
-      </a>
-    </div>
-  </section>
-
-  <!-- FEATURES SECTION -->
-  <section id="features" class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-6">
-      <h3 class="text-3xl font-bold text-center mb-12">Why Choose Our Platform?</h3>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
-          <h4 class="text-xl font-semibold mb-3">Real Workers, Verified Fast</h4>
-          <p class="text-gray-600">
-            Access a growing database of active workers ready to join immediately.
-          </p>
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a
+            href="#workers"
+            class="inline-flex justify-center items-center bg-blue-600 text-white px-5 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-blue-700"
+          >
+            I’m looking for a job
+          </a>
+          <a
+            href="#employers"
+            class="inline-flex justify-center items-center bg-slate-900 text-white px-5 py-3 rounded-lg font-semibold text-sm sm:text-base hover:bg-black"
+          >
+            I want to hire workers
+          </a>
         </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
-          <h4 class="text-xl font-semibold mb-3">AI-Powered Search</h4>
-          <p class="text-gray-600">
-            Employers can ask AI to filter workers by skill, location, visa, experience & availability.
-          </p>
-        </div>
+        <p class="mt-4 text-xs sm:text-sm text-slate-500">
+          100% online · No public CVs · Employers and workers connect directly.
+        </p>
+      </div>
 
-        <div class="p-6 bg-gray-100 rounded-xl shadow-sm">
-          <h4 class="text-xl font-semibold mb-3">Simple & Clean Platform</h4>
-          <p class="text-gray-600">
-            No clutter. No confusion. Just a clean workflow for both workers and employers.
-          </p>
-        </div>
-
+      <div class="bg-white rounded-2xl shadow-md p-5 sm:p-6 md:p-7 border border-slate-100">
+        <h2 class="text-lg font-semibold mb-3 text-slate-900">
+          What can you do on WorkNow UAE?
+        </h2>
+        <ul class="space-y-3 text-sm text-slate-600">
+          <li class="flex gap-2">
+            <span class="mt-1 h-2 w-2 rounded-full bg-blue-600"></span>
+            Workers create a simple profile with skills, experience, and availability.
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 h-2 w-2 rounded-full bg-blue-600"></span>
+            Employers search, filter, and contact workers directly – no middlemen.
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 h-2 w-2 rounded-full bg-blue-600"></span>
+            Our AI assistant helps employers find the right workers in seconds.
+          </li>
+          <li class="flex gap-2">
+            <span class="mt-1 h-2 w-2 rounded-full bg-blue-600"></span>
+            Clean, transparent, and built specifically for UAE non-tech jobs.
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- WORKERS SECTION -->
-  <section id="workers" class="py-20">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold mb-6">For Workers</h3>
-      <p class="text-gray-600 mb-8">
-        Sign up for free and companies will contact you directly. No agency fees. No middlemen.
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works" class="bg-white py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-2 text-slate-900">
+        How WorkNow UAE works
+      </h2>
+      <p class="text-sm sm:text-base text-slate-500 text-center mb-10">
+        One simple flow for both workers and employers.
       </p>
 
-      <a href="#" class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-blue-700">
-        Register as a Worker
-      </a>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100">
+          <div class="text-xs font-semibold text-blue-600 mb-2">STEP 1</div>
+          <h3 class="font-semibold mb-2 text-slate-900">Workers sign up</h3>
+          <p class="text-sm text-slate-600">
+            Workers create a free profile with skills, experience, location, and availability.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100">
+          <div class="text-xs font-semibold text-blue-600 mb-2">STEP 2</div>
+          <h3 class="font-semibold mb-2 text-slate-900">Profiles are reviewed</h3>
+          <p class="text-sm text-slate-600">
+            We quickly review new profiles to keep the worker list clean and relevant.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100">
+          <div class="text-xs font-semibold text-blue-600 mb-2">STEP 3</div>
+          <h3 class="font-semibold mb-2 text-slate-900">Employers search & filter</h3>
+          <p class="text-sm text-slate-600">
+            Employers filter by job type, experience, location, visa status, and availability.
+          </p>
+        </div>
+        <div class="bg-slate-50 rounded-xl p-5 border border-slate-100">
+          <div class="text-xs font-semibold text-blue-600 mb-2">STEP 4</div>
+          <h3 class="font-semibold mb-2 text-slate-900">Direct contact & hiring</h3>
+          <p class="text-sm text-slate-600">
+            Once they find the right fit, employers contact workers directly by phone or WhatsApp.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- EMPLOYERS SECTION -->
-  <section id="employers" class="py-20 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h3 class="text-3xl font-bold mb-6">For Employers</h3>
-      <p class="text-gray-600 mb-8">
-        Instantly find workers available right now. Filter by skills, location, experience & more.
+  <!-- JOB CATEGORIES -->
+  <section id="categories" class="py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl font-bold text-center mb-2 text-slate-900">
+        Job categories we focus on
+      </h2>
+      <p class="text-sm sm:text-base text-slate-500 text-center mb-8">
+        Built for real, everyday jobs that keep the UAE running.
       </p>
 
-      <a href="#" class="bg-gray-800 text-white px-8 py-3 rounded-lg text-lg hover:bg-gray-900">
-        Start Hiring
-      </a>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Construction & Labour</div>
+          <div class="text-slate-600">Mason workers, helpers, carpenters, technicians.</div>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Restaurants & Cafés</div>
+          <div class="text-slate-600">Waiters, kitchen staff, baristas, cleaners.</div>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Drivers & Transport</div>
+          <div class="text-slate-600">Delivery riders, light vehicle drivers, helpers.</div>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Warehouse & Logistics</div>
+          <div class="text-slate-600">Pickers, packers, loaders, storekeepers.</div>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Cleaning & Housekeeping</div>
+          <div class="text-slate-600">Cleaners, housekeepers, facility staff.</div>
+        </div>
+        <div class="bg-white border border-slate-100 rounded-xl p-4 text-sm">
+          <div class="font-semibold text-slate-900 mb-1">Electricians & Plumbers</div>
+          <div class="text-slate-600">Skilled trades for buildings and maintenance.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR WORKERS -->
+  <section id="workers" class="bg-white py-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-slate-900">
+          For workers: simple, free, and direct.
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mb-4">
+          Create one profile and let companies find you. No agency cuts, no hidden fees.
+        </p>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li>• Free to sign up and create your profile.</li>
+          <li>• Show your skills, languages, experience, and location.</li>
+          <li>• Mark yourself as “available now” when you’re ready to work.</li>
+          <li>• Companies contact you directly on phone or WhatsApp.</li>
+        </ul>
+        <a
+          href="#contact"
+          class="inline-flex mt-5 bg-blue-600 text-white px-5 py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-blue-700"
+        >
+          Register as a worker (coming soon)
+        </a>
+        <p class="mt-2 text-xs text-slate-500">
+          We’re launching our first worker intake soon. Contact us to join the early list.
+        </p>
+      </div>
+      <div class="bg-slate-50 border border-slate-100 rounded-2xl p-5 sm:p-6">
+        <h3 class="font-semibold mb-3 text-slate-900">Why workers stay on WorkNow UAE</h3>
+        <ul class="space-y-2 text-sm text-slate-700">
+          <li>✔ You stay visible to multiple companies at once.</li>
+          <li>✔ You don’t lose your job history when you change roles.</li>
+          <li>✔ You can update availability in seconds.</li>
+          <li>✔ Your profile becomes your simple, online work identity.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR EMPLOYERS & AI SECTION -->
+  <section id="employers" class="py-14 bg-slate-900 text-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-bold mb-3">
+            For employers: real workers, available now.
+          </h2>
+          <p class="text-sm sm:text-base text-slate-300 mb-4">
+            Stop scrolling through random CVs and WhatsApp groups. Use a clean database designed
+            specifically for UAE blue-collar and service hiring.
+          </p>
+          <ul class="space-y-2 text-sm">
+            <li>• Filter workers by job type, location, experience, visa status, and availability.</li>
+            <li>• See only active profiles who are currently looking for work.</li>
+            <li>• Contact workers directly – no agency commission.</li>
+            <li>• Optional paid plans for unlimited access and team accounts.</li>
+          </ul>
+          <a
+            href="#contact"
+            class="inline-flex mt-5 bg-white text-slate-900 px-5 py-3 rounded-lg text-sm sm:text-base font-semibold hover:bg-slate-100"
+          >
+            Talk to us about hiring
+          </a>
+        </div>
+
+        <div class="bg-slate-800/70 border border-slate-700 rounded-2xl p-5 sm:p-6">
+          <h3 class="font-semibold mb-2 text-white">AI-powered worker search</h3>
+          <p class="text-sm text-slate-300 mb-3">
+            Our AI assistant helps you describe who you need in natural language and converts that
+            into powerful filters.
+          </p>
+          <div class="bg-slate-900 rounded-xl p-4 text-xs sm:text-sm text-slate-200 space-y-3">
+            <div>
+              <div class="font-semibold text-blue-300 mb-1">You type:</div>
+              <p>“Find 15 warehouse helpers in Dubai who can start this week and have at least 1 year experience.”</p>
+            </div>
+            <div>
+              <div class="font-semibold text-green-300 mb-1">AI assistant:</div>
+              <p>• Job: Warehouse helper<br />
+                 • Location: Dubai<br />
+                 • Experience: 1+ year<br />
+                 • Availability: Immediate</p>
+            </div>
+            <div class="border-t border-slate-700 pt-2">
+              <p>Then you see only the workers who match. No noise. No spam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / WHY US -->
+  <section class="py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-slate-900">
+        Built for the real UAE job market.
+      </h2>
+      <p class="text-sm sm:text-base text-slate-600 mb-4">
+        WorkNow UAE is not another general job board. It is focused entirely on non-tech, hands-on
+        roles that keep the country moving – from construction and cleaning to restaurants and
+        logistics.
+      </p>
+      <p class="text-sm sm:text-base text-slate-600">
+        Our goal is simple: make hiring faster, cleaner, and more transparent for both workers and
+        employers. No complicated tools, no clutter – just a platform that works.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-bold mb-3 text-slate-900">
+        Get in touch
+      </h2>
+      <p class="text-sm sm:text-base text-slate-600 mb-6">
+        Want to join as a worker or start hiring with WorkNow UAE? Reach out and we’ll get back to you.
+      </p>
+
+      <div class="space-y-3 text-sm sm:text-base text-slate-700">
+        <p>
+          Email:
+          <a href="mailto:hello@worknow-uae.com" class="text-blue-600 hover:underline">
+            hello@worknow-uae.com
+          </a>
+          <span class="text-xs text-slate-400">(placeholder – change to your real email)</span>
+        </p>
+        <p>
+          WhatsApp:
+          <a href="https://wa.me/971000000000" class="text-blue-600 hover:underline" target="_blank" rel="noopener">
+            +971 00 000 0000
+          </a>
+          <span class="text-xs text-slate-400">(placeholder – change to your number)</span>
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-gray-300 py-10">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <p>© 2025 UAE Workforce Hub — Connecting Workers & Employers</p>
+  <footer class="bg-slate-950 text-slate-400 py-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm">
+      <p>© 2025 WorkNow UAE. All rights reserved.</p>
+      <p class="text-slate-500">Made for UAE workers & employers.</p>
     </div>
   </footer>
 
